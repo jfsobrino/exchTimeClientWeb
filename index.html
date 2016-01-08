@@ -12,16 +12,17 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="styles/js/bootstrap.min.js"></script>
+<!--    <script src="styles/js/bootstrap.min.js"></script>-->
     <!-- AngularJS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-    <script src="https://code.angularjs.org/1.4.7/angular-route.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-route-segment/1.4.0/angular-route-segment.min.js"></script>
+    <script src="vendor/angular.min.js"></script>
+    <script src="vendor/angular-route.min.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/SingInCtrl.js"></script>
     <!-- Bootstrap -->
-    <link href="styles/css/bootstrap.min.css" rel="stylesheet">
+<!--    <link href="styles/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="styles/bootstrap.css" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,20 +33,6 @@
 
 <body>
     <section class="container-fluid" ng-view>
-    </section>
-    <section class="container" ng-view>
-    <header class="Title">
-            <h1>Exchange your Time</h1>
-            <h2>Exchange your time with other people and learn new knowledges, experiences and skills</h2>
-        </header>
-        <article class="SignIn">
-            <form>
-                <input type="email" name="iEmail" value="" placeholder="Email address" autofocus>
-                <input type="password" name="iPassword" value="" placeholder="Password">
-                <input type="submit" name="bSign" value="Sign in">
-                <div>Not a member? <a href="newUser.html">Join now</a></div>
-            </form>
-        </article>
     </section>
 </body>
 

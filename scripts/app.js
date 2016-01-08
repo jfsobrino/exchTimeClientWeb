@@ -1,18 +1,15 @@
 
-var exchTimeApp = angular.module("exchTimeApp", ["ngRoute", "route-segment", "view-segment"]);
+angular.module("exchTimeApp", ["ngRoute"]);
 
-exchTimeApp.module("exchTimeApp").config(["$routeProvider", function ($routeProvider) {
+angular.module("exchTimeApp").config(["$routeProvider", function ($routeProvider) {
 
     $routeProvider
-        .when("/seccion1", {
-            controller: "IndexController",
-            template: "<h1>Seccion 1</h1>"
+        .when("/singin", {
+            controller: "SingInCtrl",
+            template: "views/SingInView.html"
         })
-        .when("/seccion2", {
+        .when("/main", {
             controller: "Seccion1Ctrl2",
             template: "<h1>Seccion 2</h1>"
         })
 }]);
-
-angular.module("exchTimeApp").controller("Seccion1Ctrl1", function () { /* codigo */ });
-angular.module("exchTimeApp").controller("Seccion1Ctrl2", function () { /* codigo */ });
