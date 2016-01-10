@@ -1,12 +1,36 @@
-<header class="Title">
-    <h1>Exchange your Time</h1>
-    <h2>Exchange your time with other people and learn new knowledges, experiences and skills</h2>
-</header>
-<article class="SignIn" ng-controller="scripts/controllers/SingInCtrl">
-    <form>
-        <input type="email" name="iEmail" value="" placeholder="Email address" autofocus ng-model="iEmail">
-        <input type="password" name="iPassword" value="" placeholder="Password" ng-model="iPassword">
-        <input type="submit" name="bSign" value="Sign in">
-        <div>Not a member? <a href="newUser.html">Join now</a></div>
-    </form>
-</article>
+<section class="container">
+    <header class="jumbotron">
+        <h1>Exchange your Time</h1>
+        <h3>Exchange your time with other people and learn new knowledges, experiences and skills</h3>
+    </header>
+    <article class="container col-sm-offset-3 col-md-5">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Sign in</button>
+                </div>
+            </div>
+        </form>
+    </article>
+</section>
